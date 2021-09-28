@@ -19,5 +19,6 @@ from django.urls import path, include
 # admin은 장고에서 기본적으로 제공해줌
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('accountapp.urls'))
+    path('accounts/', include('accountapp.urls')),
+    path('profiles/', include('profileapp.urls')),
 ]
